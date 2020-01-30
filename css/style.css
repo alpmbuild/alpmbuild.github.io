@@ -21,6 +21,16 @@ img {
 
 .footer {
     margin-top: 20px;
+    font-size: 30px;
+}
+
+.footer p {
+    max-width: 400px;
+    font-size: 25px;
+}
+
+.footer p a {
+    font-size: 25px;
 }
 
 img.header {
