@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Delius&display=swap');
+
+.vcenter {
+    display: flex;
+    align-items: center;
+}
+
+.body-holder {
+    display: flex;
+    justify-content: center;
+}
+
+.body {
+    max-width: 800px;
+}
+
+img {
+    max-width: 300px;
+    height: auto;
+}
+
+img.header {
+    max-width: 400px;
+}
+
+h1, p {
+    font-family: "delius", sans-serif;
+    margin: 0;
+}
+h1 {
+    font-size: 90px;
+}
+p {
+    font-size: 40px;
+}
+.line {
+    height: 27pt;
+    width: 100%;
+    background: linear-gradient(91.93deg, #5ADAFF 0%, #1793D1 100%);
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.line+p {
+    margin-top: 20px;
+}
+p+h1{
+    margin-top: 79px;
+}

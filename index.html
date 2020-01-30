@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css" />
+        <title>alpmbuild—the better way to build arch packages</title>
+        <meta property="og:title" content="alpmbuild" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="the better way to build arch packages">
+        <meta property="og:url" content="https://alpmbuild.github.io" />
+        <meta property="og:image" content="https://alpmbuild.github.io/img/alpmbuild%20gopher.png" />
+        <meta name="theme-color" content="#5adaff">
+    </head>
+    <body>
+        <div class="body-holder">
+            <div class="body">
+                <div class="vcenter">
+                    <img src="img/alpmbuild gopher.png" class="header">
+                    <div>
+                        <h1>alpmbuild</h1>
+                        <p>
+                            the sane packaging format for alpm packages
+                        </p>
+                    </div>
+                </div>
+                <h1>specfiles</h1>
+                <div class="line"></div>
+                <div class="vcenter">
+                    <img src="img/alpmbuild recipes.png">
+                    <p>
+                        say goodbye to the old and primitive PKGBUILDs you’re used
+                        to, and say hello to the specfiles. packaging is easier than
+                        ever with specfiles. with simpler syntax and useful directives,
+                        you’ll find using specfiles to be a breeze.
+                    </p>
+                </div>
+                <h1>speed</h1>
+                <div class="line"></div>
+                <div class="vcenter">
+                    <p>
+                        alpmbuild is programmed in golang, while makepkg is a shell script.
+                        this means your package spends more time actually building
+                        and less time parsing the build recipe.
+                    </p>
+                    <img src="img/alpmbuild speed.png">
+                </div>
+                <h1>error messages</h1>
+                <div class="line"></div>
+                <div class="vcenter">
+                    <img src="img/alpmbuild error finding.png">
+                    <p>
+                        we’re all humans, and we all make mistakes. alpmbuild is 
+                        created with world-class error messages that tell you exactly
+                        what’s wrong with your specfile and help you fix it.
+                    </p>
+                </div>
+                <h1>cross-distro format</h1>
+                <div class="line"></div>
+                <div class="vcenter">
+                    <p>
+                        ever wished you could target other distros like Debian and
+                        Fedora with a PKGBUILD? alpmbuild uses a specfile format
+                        compatible with rpmbuild and debbuild, allowing you to target
+                        many distros with the same specfile.
+                    </p>
+                    <img src="img/alpmbuild formats.png">
+                </div>
+                <h1>safety</h1>
+                <div class="line"></div>
+                <p>
+                    alpmbuild by default is like rust when it comes to safety.
+                    you need to declare what files your package provides in the
+                    specfile by default, or opt into the unsafe mode. this ensures
+                    you know exactly what’s going to be put into your package before
+                    you build it.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
