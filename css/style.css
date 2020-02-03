@@ -56,6 +56,9 @@ a {
     color: #1793d1;
     font-size: 30px;
 }
+a.large {
+    font-size: 40px;
+}
 a:hover {
     filter: brightness(1.2)
 }
