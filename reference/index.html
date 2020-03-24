@@ -1,0 +1,608 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Reference Manual &mdash; alpmbuild  documentation</title>
+  
+
+  
+  <meta property="og:title" content="Reference Manual &mdash; alpmbuild  documentation" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://de.gravatar.com/userimage/126625392/12c3b695d18bd121e497ac55f4395832.png?size=256" />
+  
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/js/app.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/breeze.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/app.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="For Packagers" href="../packagers/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon" alt="Documentation Home"> alpmbuild
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search..." />
+    <input type="submit" class="searchbtn" value="" >
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../packagers/index.html">For Packagers</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Reference Manual</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">alpmbuild</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <div data-toggle="wy-nav-top" class="drawer-toggle"><i class="fa fa-bars"></i></div>
+      <li><a href="../index.html">Docs</a> <img class="breeze-icon" src="../_static/css/go-next.svg"> </li>
+        
+      <li class="current"><span>Reference Manual</span></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/reference/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="reference-manual">
+<h1>Reference Manual<a class="headerlink" href="#reference-manual" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="key-values">
+<h2>Key-Values<a class="headerlink" href="#key-values" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="single-value-fields">
+<h3>Single-Value Fields<a class="headerlink" href="#single-value-fields" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="name">
+<h4>Name<a class="headerlink" href="#name" title="Permalink to this headline">¶</a></h4>
+<p>The name of your package. Corresponds to <code class="docutils literal notranslate"><span class="pre">pkgname</span></code>.</p>
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span><span class="gh">Name</span><span class="p">:</span> my-package-name
+</pre></div>
+</div>
+</div>
+<div class="section" id="summary">
+<h4>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h4>
+<p>The summary of your package.</p>
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span><span class="gh">Summary</span><span class="p">:</span> A very awesome package
+</pre></div>
+</div>
+</div>
+<div class="section" id="license">
+<h4>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h4>
+<p>The license of your package.</p>
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span><span class="gh">License</span><span class="p">:</span> GPL
+</pre></div>
+</div>
+</div>
+<div class="section" id="url">
+<h4>URL<a class="headerlink" href="#url" title="Permalink to this headline">¶</a></h4>
+<p>A URL to a human-readable homepage.</p>
+<div class="flex docutils container">
+<div class="do docutils container">
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span><span class="gh">URL</span><span class="p">:</span> https://phabricator.kde.org/source/discover/
+</pre></div>
+</div>
+<div class="caption docutils container">
+<p><span class="noblefir">Do.</span>
+Link to a human-readable page, like a git forge.</p>
+</div>
+</div>
+<div class="dont docutils container">
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span><span class="gh">URL</span><span class="p">:</span> https://download.kde.org/stable/plasma/<span class="kc">%{version}</span>/<span class="kc">%{name}</span>-<span class="kc">%{version}</span>.tar.xz
+</pre></div>
+</div>
+<div class="caption docutils container">
+<p><span class="iconred">Don’t.</span>
+Don’t link to sources.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="version">
+<h4>Version<a class="headerlink" href="#version" title="Permalink to this headline">¶</a></h4>
+<p>The version of the upstream item being packaged.</p>
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span><span class="gh">Version</span><span class="p">:</span> 2.10
+</pre></div>
+</div>
+</div>
+<div class="section" id="release">
+<h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<p>The version of the package itself—increment this when you change the build recipe
+to get a different package when there’s not a new version of the thing being packaged.</p>
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span><span class="gh">Release</span><span class="p">:</span> 5
+</pre></div>
+</div>
+</div>
+<div class="section" id="epoch">
+<h4>Epoch<a class="headerlink" href="#epoch" title="Permalink to this headline">¶</a></h4>
+<p>The epoch of your package. If the epoch for a package is higher than an older version,
+it will be considered an upgrade, regardless of the version and release.</p>
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span><span class="gh">Epoch</span><span class="p">:</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="array-fields">
+<h3>Array Fields<a class="headerlink" href="#array-fields" title="Permalink to this headline">¶</a></h3>
+<p>Array fields can be specified like this:</p>
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span>Array: item
+Array: item
+
+<span class="c"># array is [item, item]</span>
+</pre></div>
+</div>
+<p>Or they can be specified like this:</p>
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span>Array: item item
+</pre></div>
+</div>
+<div class="section" id="requires">
+<h4>Requires<a class="headerlink" href="#requires" title="Permalink to this headline">¶</a></h4>
+<p>Indicates a dependency that needs to be installed in order to use the package.</p>
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span><span class="gh">Requires</span><span class="p">:</span> dependency
+</pre></div>
+</div>
+</div>
+<div class="section" id="buildrequires">
+<h4>BuildRequires<a class="headerlink" href="#buildrequires" title="Permalink to this headline">¶</a></h4>
+<p>Indicates a dependency that needs to be installed in order to build the package.</p>
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span><span class="gh">BuildRequires</span><span class="p">:</span> dependency
+</pre></div>
+</div>
+</div>
+<div class="section" id="checkrequires">
+<h4>CheckRequires<a class="headerlink" href="#checkrequires" title="Permalink to this headline">¶</a></h4>
+<p>Indicates a dependency that needs to be installed in order to run tests on the package.</p>
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span>CheckRequires: dependency
+</pre></div>
+</div>
+</div>
+<div class="section" id="recommends">
+<h4>Recommends<a class="headerlink" href="#recommends" title="Permalink to this headline">¶</a></h4>
+<p>Indicates a dependency that can be installed to provide more features for a package.
+Do not use this to make parts of a package optional by breaking them with missing
+dependencies. Instead, use split packages.</p>
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span>Recommends: dependency
+</pre></div>
+</div>
+</div>
+<div class="section" id="provides">
+<h4>Provides<a class="headerlink" href="#provides" title="Permalink to this headline">¶</a></h4>
+<p>Indicates a virtual package that this package provides.</p>
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span><span class="gh">Provides</span><span class="p">:</span> capability
+</pre></div>
+</div>
+</div>
+<div class="section" id="conflicts">
+<h4>Conflicts<a class="headerlink" href="#conflicts" title="Permalink to this headline">¶</a></h4>
+<p>Indicates a package that cannot be installed alongside this package.</p>
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span><span class="gh">Conflicts</span><span class="p">:</span> dependency
+</pre></div>
+</div>
+</div>
+<div class="section" id="replaces">
+<h4>Replaces<a class="headerlink" href="#replaces" title="Permalink to this headline">¶</a></h4>
+<p>Indicates that this package should replace another package. <code class="docutils literal notranslate"><span class="pre">pacman</span></code> will
+attempt to replace the old one with this package when it becomes aware of it
+during a system upgrade.</p>
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span>Replaces: dependency
+</pre></div>
+</div>
+</div>
+<div class="section" id="groups">
+<h4>Groups<a class="headerlink" href="#groups" title="Permalink to this headline">¶</a></h4>
+<p>Groups that this package is part of.</p>
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span>Groups: qt5
+</pre></div>
+</div>
+</div>
+<div class="section" id="backup">
+<h4>Backup<a class="headerlink" href="#backup" title="Permalink to this headline">¶</a></h4>
+<p>Configuration files to back up:</p>
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span>Backup: /etc/pacman.conf
+</pre></div>
+</div>
+</div>
+<div class="section" id="exclusivearch">
+<h4>ExclusiveArch<a class="headerlink" href="#exclusivearch" title="Permalink to this headline">¶</a></h4>
+<p>Indicates that this package can only be compiled on the given architectures.</p>
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span><span class="gh">ExclusiveArch</span><span class="p">:</span> x86_64
+</pre></div>
+</div>
+</div>
+<div class="section" id="sourcex">
+<h4>SourceX<a class="headerlink" href="#sourcex" title="Permalink to this headline">¶</a></h4>
+<p>Indicates a source to build a package with.</p>
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span><span class="gh">Source0</span><span class="p">:</span> URL [with hashMethod hashValue] [with sig signatureFile] [with key pgpKey] [with keyserver keyserverURL]
+</pre></div>
+</div>
+</div>
+<div class="section" id="patchx">
+<h4>PatchX<a class="headerlink" href="#patchx" title="Permalink to this headline">¶</a></h4>
+<p>Indicates a patch to be applied on the package sources.</p>
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span><span class="gh">Patch0</span><span class="p">:</span> URL [with hashMethod hashValue] [with sig signatureFile] [with key pgpKey] [with keyserver keyserverURL]
+</pre></div>
+</div>
+</div>
+<div class="section" id="hash-methods">
+<h4>Hash Methods<a class="headerlink" href="#hash-methods" title="Permalink to this headline">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 86%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>sha1</p></td>
+<td><p>A sha1 sum to verify the source with</p></td>
+</tr>
+<tr class="row-odd"><td><p>sha224</p></td>
+<td><p>A sha224 sum to verify the source with</p></td>
+</tr>
+<tr class="row-even"><td><p>sha256</p></td>
+<td><p>A sha256 sum to verify the source with</p></td>
+</tr>
+<tr class="row-odd"><td><p>sha384</p></td>
+<td><p>A sha384 sum to verify the source with</p></td>
+</tr>
+<tr class="row-even"><td><p>sha512</p></td>
+<td><p>A sha512 sum to verify the source with</p></td>
+</tr>
+<tr class="row-odd"><td><p>md5</p></td>
+<td><p>A md5 sum to verify the source with</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="directives">
+<h2>Directives<a class="headerlink" href="#directives" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="build-recipe">
+<h3>Build Recipe<a class="headerlink" href="#build-recipe" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="prepare">
+<h4>Prepare<a class="headerlink" href="#prepare" title="Permalink to this headline">¶</a></h4>
+<p>Commands to prepare the package for compilation. Normally, you can omit this
+directive and assume you’re starting in the extracted root of Source0 if it
+is a tarball and you don’t need to apply patches.</p>
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span><span class="nd">%prep</span>
+commands
+</pre></div>
+</div>
+</div>
+<div class="section" id="build">
+<h4>Build<a class="headerlink" href="#build" title="Permalink to this headline">¶</a></h4>
+<p>Commands to compile the package or otherwise produce the end result.</p>
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span><span class="nd">%build</span>
+commands
+</pre></div>
+</div>
+</div>
+<div class="section" id="install">
+<h4>Install<a class="headerlink" href="#install" title="Permalink to this headline">¶</a></h4>
+<p>Commands to install the final package into the virtual filesystem for compressing.</p>
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span><span class="nd">%install</span>
+commands
+</pre></div>
+</div>
+</div>
+<div class="section" id="check">
+<h4>Check<a class="headerlink" href="#check" title="Permalink to this headline">¶</a></h4>
+<p>Commands to run tests on the package.</p>
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span><span class="nd">%check</span>
+commands
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="scriptlets">
+<h3>Scriptlets<a class="headerlink" href="#scriptlets" title="Permalink to this headline">¶</a></h3>
+<p>Small scripts that run at key points in transactions.</p>
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span>%scriptlet
+commands
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 44%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Scriptlet</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Arguments</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">%pre_install</span></code></p></td>
+<td><p>Run before files are extracted when installing a package.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">$1</span></code>: package version.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">%post_install</span></code></p></td>
+<td><p>Run after files are extracted when installing a package.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">$1</span></code>: package version.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">%pre_upgrade</span></code></p></td>
+<td><p>Run before files are extracted when updating a package.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">$1</span></code>: old package version. <code class="docutils literal notranslate"><span class="pre">$2</span></code>: new package version.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">%post_upgrade</span></code></p></td>
+<td><p>Run after files are extracted when updating a package.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">$1</span></code>: old package version. <code class="docutils literal notranslate"><span class="pre">$2</span></code>: new package version.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">%pre_remove</span></code></p></td>
+<td><p>Run before files are removed when removing a package.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">$1</span></code>: package version.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">%post_remove</span></code></p></td>
+<td><p>Run after files are removed when removing a package.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">$1</span></code>: package version.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="changelog">
+<h3>Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline">¶</a></h3>
+<p>A changelog describing changes to a package.</p>
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span><span class="nd">%changelog</span>
+New in version 2.10
+  - More hellos!
+  - yadda yadda
+</pre></div>
+</div>
+</div>
+<div class="section" id="split-packages">
+<h3>Split Packages<a class="headerlink" href="#split-packages" title="Permalink to this headline">¶</a></h3>
+<p>Splitting packages.</p>
+<div class="section" id="declaring-a-split-package">
+<h4>Declaring a split package<a class="headerlink" href="#declaring-a-split-package" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span><span class="nd">%package</span> (-n) name
+</pre></div>
+</div>
+<p>Declares a new split package called <code class="docutils literal notranslate"><span class="pre">$PARENT_NAME-$NAME</span></code>. If <code class="docutils literal notranslate"><span class="pre">-n</span></code> is provided,
+the name is used verbatim instead of appending it to the parent package’s name.</p>
+</div>
+<div class="section" id="moving-files-to-a-split-package">
+<h4>Moving files to a split package<a class="headerlink" href="#moving-files-to-a-split-package" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span><span class="nd">%files</span> (-n) name
+</pre></div>
+</div>
+<p>Specifies a files section for a split package. Like <code class="docutils literal notranslate"><span class="pre">%package</span></code>, <code class="docutils literal notranslate"><span class="pre">-n</span></code> will cause
+<code class="docutils literal notranslate"><span class="pre">name</span></code> to be used verbatim. Files are listed based on their location in the parent
+package, like so:</p>
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span><span class="nd">%files</span> translationfiles
+/usr/share/locale/*/LC_MESSAGES/hello.mo
+</pre></div>
+</div>
+<p>Files are interpreted as regex.</p>
+<p>The following macros are provided as shorthand for the GNU install directories:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 53%" />
+<col style="width: 48%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Macro</p></th>
+<th class="head"><p>Default Location</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">%{_prefix}</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/usr</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">%{_bindir}</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/usr/bin</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">%{_sbindir}</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/usr/sbin</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">%{_libexecdir}</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/usr/libexec</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">%{_datadir}</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/usr/share</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">%{_sysconfdir}</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/etc</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">%{_includedir}</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/usr/include</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">%{_mandir}</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/usr/share/man</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">%{_infodir}</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/usr/share/info</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id1">
+<h4>Scriptlets<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span>%scriptlet (-n) name
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h4>Key-Values<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-spec notranslate"><div class="highlight"><pre><span></span><span class="nd">%package</span> extension
+<span class="gh">Summary</span><span class="p">:</span> A totally cool extension for <span class="kc">%{name}</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <!-- 
+<div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+    
+    
+    <a href="../packagers/index.html" class="btn btn-neutral float-left" title="For Packagers"
+        accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+    
+</div>
+ -->
+<footer>
+    <hr />
+
+    <div class="footer-content">
+        <div role="contentinfo">
+            <p>
+                
+                &copy; Copyright 2020, Carson Black
+    
+            </p>
+        </div>
+        
+        
+        Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+        <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by
+        <a href="https://readthedocs.org">Read the Docs</a>. 
+    </div>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
